@@ -26,7 +26,7 @@ for (let i=0; i<5; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
 
-for (let i=3; i<5; i++) {  
+for (let i=3; i<=5; i++) {  
   console.log(i);
 }
 
@@ -46,7 +46,7 @@ for (let i=2; i<=10; i +=2) {
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
 
-for (let i=5; i<0; i--) {  
+for (let i=5; i>=0; i--) {  
   console.log(i);
 }
 
@@ -54,13 +54,12 @@ for (let i=5; i<0; i--) {
 
 // 2. For of loops  
 console.log('---- 2. For Of loop ----');
-let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
+const stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-console.log('Some stars:');
 
-for(let i = 0; > stars.length ; i++){
-console.log('Some stars: ' + stars[i]);
+for (const star of stars) {
+  console.log('Some stars:', star);
 }
 
 // 3. While loops  
@@ -80,7 +79,7 @@ console.log(stars[i]);
 console.log('count from 0 to 5');
 
 let i2 = 0
-while(i2 < 5){
+while(i2 <= 5){
   console.log(i2);
   i2++;
 }
